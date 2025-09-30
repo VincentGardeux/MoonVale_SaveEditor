@@ -1,2 +1,9 @@
 # Your file save
 PersData.kat
+Patched.kat
+
+# Output JSON
+save.json
+
+# Jupyter tmp file
+.ipynb_checkpoints
