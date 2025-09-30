@@ -3,15 +3,14 @@ Save Editor for MoonVale game (everbytes studio)
 
 # Usage
 ## 1) Dump for inspection
-docker run --rm -it -v "$PWD:/work" mosthege/pythonnet:python3.11.1-mono6.12-pythonnet3.0.1 \
-  python /work/kat_edit.py dump /work/PersData.kat > save.json
+```bash
+docker run --rm -it -v "$PWD:/work" mosthege/pythonnet:python3.11.1-mono6.12-pythonnet3.0.1 python /work/kat_edit.py dump /work/PersData.kat > save.json
+```
 
 ## 2) Edit and save a new file (examples)
-docker run --rm -it -v "$PWD:/work" mosthege/pythonnet:python3.11.1-mono6.12-pythonnet3.0.1 \
-  python /work/kat_edit.py edit /work/PersData.kat /work/Patched.kat \
-    --set coins=999999 \
-    --set diamonds=100000 \
-    --set username="Alice"
+```bash
+docker run --rm -it -v "$PWD:/work" mosthege/pythonnet:python3.11.1-mono6.12-pythonnet3.0.1 python /work/kat_edit.py edit /work/PersData.kat /work/Patched.kat --set coins=999999 --set diamonds=100000 --set username="Vincent"
+```
 
 # Installation (for further development)
 ## Docker image
