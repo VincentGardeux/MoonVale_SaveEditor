@@ -1,7 +1,20 @@
 # MoonVale_SaveEditor
 Save Editor for MoonVale game (everbytes studio)
 
-# Installation
+# Usage
+## 1) Dump for inspection
+docker run --rm -it -v "$PWD:/work" mosthege/pythonnet:python3.11.1-mono6.12-pythonnet3.0.1 \
+  python /work/kat_edit.py dump /work/PersData.kat > save.json
+
+## 2) Edit and save a new file (examples)
+docker run --rm -it -v "$PWD:/work" mosthege/pythonnet:python3.11.1-mono6.12-pythonnet3.0.1 \
+  python /work/kat_edit.py edit /work/PersData.kat /work/Patched.kat \
+    --set coins=999999 \
+    --set diamonds=777 \
+    --set username="Alice" \
+    --set paths[0].activeState=true
+
+# Installation (for further development)
 ## Docker image
 First, you need to build a local Docker image using the [Dockerfile](Dockerfile) (here I call the local image "dotnet").
 
