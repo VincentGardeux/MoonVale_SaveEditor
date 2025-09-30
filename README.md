@@ -1,5 +1,5 @@
 # MoonVale_SaveEditor
-Save Editor for MoonVale game (everybytes studio)
+Save Editor for MoonVale game (everbytes studio)
 
 # Installation
 ## Docker image
