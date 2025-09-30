@@ -1,0 +1,22 @@
+{
+ "argv": [
+  "docker",
+  "run",
+  "--rm",
+  "--network=host",
+  "-v",
+  "{connection_file}:/connection-spec",
+  "-v",
+  "/home:/home",
+  "-v",
+  "/data:/data",
+  "dotnet:latest",
+  "python",
+  "-m",
+  "ipykernel_launcher",
+  "-f",
+  "/connection-spec"
+ ],
+ "display_name": ".NET (Python v3.11)",
+ "language": "python"
+}
