@@ -1,5 +1,6 @@
 # MoonVale_SaveEditor
-Save Editor for MoonVale game (everbytes studio)
+Save Editor for MoonVale game (everbytes studio).
+Currently does not work. The game does not start.
 
 # Usage
 ## 1) Dump for inspection
